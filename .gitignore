@@ -2,6 +2,7 @@
 instrukcija.txt
 instrukcija.docx
 ~$strukcija.docx
+instrukcija/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
