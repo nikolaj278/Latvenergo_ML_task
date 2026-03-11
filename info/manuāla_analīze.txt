@@ -1,5 +1,8 @@
 # Subjektīvas kandidātu kvalitātes novērtēšanas rezultāti un aprēķinātu radītaju informativitāte.
 
+Tā kā visi modeļi ģenerē tekstu ar pieturzīmēm, tad korektāk būtu novērtēt kandidātus, atstājot punktuāciju, taču tas var veidot maldinošus metriku rezultātus, tāpēc tika nolemts novērtēt WER, CER un WIL rādītājus tekstiem gan ar punktuāciju, gan bez tas.
+
+
 auto-1
 
 Kandidāta ģenerētajā tekstā ir daudz lieku pieturzīmju — komatu un punktu. Runājot par vārdiem, daži no tiem ir sadalīti nepareizi, piemēram, “gadu mija” nevis “gadumija”.
@@ -58,5 +61,8 @@ Trešajā gadījumā punktuācijas noņemšana neietekmē rezultātus tik daudz 
 
 
 Secinājumi:
-Acīmredzami, ka vislabākos rezultātus parāda otrais kandidāts, jo abos gadījumos — gan novērtējot tekstus ar pieturzīmēm, gan bez tām — auto-2 visās trīs metrikās (WER, CER, WIL) uzrāda vismazākās vērtības.
-Novērtējot tekstus bez pieturzīmēm, auto-2 rezultāti ir WER = 0.0272, CER = 0.0125 un WIL = 0.0373, savukārt auto-1 un auto-3 kandidātiem tie ir attiecīgi WER = 0.2772, CER = 0.0735, WIL = 0.4448 un WER = 0.0952, CER = 0.0328, WIL = 0.169.
+1. Salīdzinot novērtētos WER, CER un WIL rādītājus gadījumos ar un bez pieturzīmēm, var skaidri redzēt, ka, noņemot punktuāciju, metriku vērtības uzlabojas. Lai gan tādējādi tiek zaudēta daļa CER sniegtās informācijas, WER un WIL šajā gadījumā sniedz ticamākus rezultātus.
+2. Novērtējot tekstus bez pieturzīmēm, auto-2 rezultāti ir WER = 0.0272, CER = 0.0125 un WIL = 0.0373, savukārt auto-1 un auto-3 kandidātiem tie ir attiecīgi 0.2772, 0.0735, 0.4448 un 0.0952, 0.0328, 0.169.
+3. Acīmredzami, ka vislabākos rezultātus parāda otrais kandidāts, jo abos gadījumos — gan novērtējot tekstus ar pieturzīmēm, gan bez tām — auto-2 visās trīs metrikās (WER, CER, WIL) uzrāda vismazākās vērtības.
+3. Trešais modelis kopumā parāda labākus rezultātus nekā pirmais, taču tam ir nopietns trūkums — nekorekta skaitļu transkripcija.
+
