@@ -1,0 +1,29 @@
+Metriku apraksts
+
+
+WER (Word Error Rate)
+
+WER  mēra, novērtējot katru vārdu vai tokenu kandidāta un references tekstā, un nosaka, vai tas ir lieks, trūkstošs vai aizvietots vārds. Šajās kategorijās ietilpstošo vārdu skaits tiek saskaitīts un dalīts ar vārdu skaitu oriģinālajā tekstā.
+WER tiek izmantots gadījumos, kad vārdu pareizrakstība ir galvenais kritērijs, piemēram, video subtitru ģenerēšanā.
+Viens no WER ierobežojumiem ir tā jutība pret sīkām izmaiņām, kas neietekmē nozīmi. Piemēram, salīdzinot “is not” un “isn't”, WER atpazīs divas kļūdas — substitution un insertion, lai gan nozīme ir identiska. Ja ASR modelis uztver ne tikai vārdus, bet arī pieturzīmes, WER var novērtēt kandidātu sliktāk, nekā tas patiesībā ir. Tas notiek tāpēc, ka tekstu tokenizējot, pieturzīmes tiek iekļautas tokenos. Piemēram, “Labdien!” un “Labdien.” pēc WER tiks novērtēti kā pilnīgi atšķirīgi, lai gan faktiskā nozīmes atšķirība ir minimāla. 
+
+
+CER (Charecter Error Rate)
+
+CER tiek aprēķināts līdzīgi kā WER, tikai vārdu vai tokenu vietā tiek apskatītas zīmes — burti, cipari u.c.
+CER ir noderīgs gadījumos, kad svarīgāka ir simbolu precizitāte, piemēram, burtu un ciparu virknēs, kā dokumentu numuri vai citi kodi. Dažām valodām, piemēram, ķīniešu vai korejiešu, CER var darboties labāk nekā WER valodas īpatnību dēļ.
+CER ir skaitļošanas ziņā smagāks nekā WER, jo tiek analizēts katrs simbols, nevis atsevišķi vārdi vai tokeni. Turklāt CER nepievērš uzmanību semantikai, tāpēc tas var būt maldinošs — zems rādītājs ne vienmēr nozīmē, ka modeļa ģenerētais teksts būs viegli izlasāms un saprotams. 
+
+
+WIL (Word Information Lost)
+
+WIL attēlo, cik daudz informācijas, t.i., vārdu, ir pazaudēts, salīdzinot kandidāta tekstu ar referenci.
+WIL koncentrējas uz informācijas saglabāšanu izejas tekstā, kas ir īpaši noderīgi, piemēram, stundu vai lekciju transkripcijās.
+Tomēr WIL ir grūtāk interpretējams. Tam piemīt līdzīgas problēmas kā WER — tas joprojām ir stipri ietekmēts no vārdu formām un pieturzīmēm.
+Salīdzinājumā ar WER, WIL mazāk penalizē vārdu kārtības izmaiņas, kas var būt gan pozitīva, gan negatīva īpašība.
+
+
+
+
+Svarīgi atzīmēt, ka atšķirībā no tādām metrikām kā Precision un Recall, kur lielāka vērtība nozīmē labāku rezultātu, WER, CER un WIL ir kļūdu skaitliska reprezentācija. Tāpēc lielākas šo metriku vērtības nozīmē mazāku automātiskās transkripcijas līdzību referencei, tātad sliktāku rezultātu.
+Jāatzīmē arī vēl viena WER un CER īpašība — šīm metrikām nav augšējās robežas.
