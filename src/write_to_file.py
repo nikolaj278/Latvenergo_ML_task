@@ -11,7 +11,7 @@ def write_results(file_path, name_prefix, candidates):
     """
 
     # record results into txt file
-    with open(file_path + name_prefix + ".txt", "w") as file:
+    with open(file_path + name_prefix + ".txt", "w", encoding="utf-8") as file:
         for name, cand in candidates.items():
             ss = name + "\n" \
             + "Novērtējot teksa ar punktuāciju rādītājus: \nWER={}, CER={}, WIL={}\n\n" \

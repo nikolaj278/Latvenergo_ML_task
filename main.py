@@ -15,12 +15,12 @@ if __name__ == "__main__":
     candidates = {}
 
     # read transkripts.txt file
-    with open(PATH + ref_file_name, "r") as file:
+    with open(PATH + ref_file_name, "r", encoding="utf-8") as file:
             reference = file.read()
 
     #read candidate files and create Candidate objects
     for name in candidate_names:
-        with open(PATH + name + ".txt", "r") as file:
+        with open(PATH + name + ".txt", "r", encoding="utf-8") as file:
             text = file.read()
             candidates[name] = Candidate(
                                 text=text, 
