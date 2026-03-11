@@ -1,6 +1,7 @@
 # Local files
 instrukcija.txt
 instrukcija.docx
+~$strukcija.docx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
