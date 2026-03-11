@@ -58,6 +58,7 @@ if __name__ == "__main__":
         write_error_markup_to_file(reference=basic_prep(reference, rem_punct=True), 
                                    candidate=basic_prep(cand.text, rem_punct=True),
                                    out_file_path="output/without_punctuation/out_" + name + ".html")
+    print("The code ran successfully.")
 
 
     
