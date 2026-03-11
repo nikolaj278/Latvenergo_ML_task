@@ -1,24 +1,24 @@
 auto-1
-Novērtējot teksa ar punktuāciju rādītājus: 
+Novērtējotrādītājus tekstam ar punktuāciju: 
 WER=0.3316, CER=0.0819, WIL=0.5237
 
-Novērtējot teksta bez punktuācijas rādītājus: 
+Novērtējot rādītājus tekstam bez punktuācijas: 
 WER=0.2772, CER=0.0735, WIL=0.4448
 
 
 auto-2
-Novērtējot teksa ar punktuāciju rādītājus: 
+Novērtējotrādītājus tekstam ar punktuāciju:
 WER=0.0952, CER=0.0221, WIL=0.1672
 
-Novērtējot teksta bez punktuācijas rādītājus: 
+Novērtējot rādītājus tekstam bez punktuācijas:
 WER=0.0272, CER=0.0125, WIL=0.0373
 
 
 auto-3
-Novērtējot teksa ar punktuāciju rādītājus: 
+Novērtējotrādītājus tekstam ar punktuāciju:
 WER=0.1276, CER=0.038, WIL=0.2269
 
-Novērtējot teksta bez punktuācijas rādītājus: 
+Novērtējot rādītājus tekstam bez punktuācijas:
 WER=0.0952, CER=0.0328, WIL=0.169
 
 
