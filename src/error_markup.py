@@ -73,8 +73,8 @@ def write_error_markup_to_file(reference, candidate, out_file_path):
     <h3>Krāsu nozīme:</h3>
     <ul>
     <li><span style="color:red">Sarkans</span> = deletion (pazudūšais vārds)</li>
-    <li><span style="color:blue">Zils</span> = insertion (lieks vārds)</li>
-    <li><span style="color:orange">Oranžs</span> = substitution (pareizais vārds -> nepareizs vārds)</li>
+    <li><span style="color:blue">Zils</span> = insertion (liekais vārds)</li>
+    <li><span style="color:orange">Oranžs</span> = substitution (aizvietotais pareizais vārds -> nepareizs vārds)</li>
     </ul>
     
     <p>{marked_text}</p>

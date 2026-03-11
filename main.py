@@ -42,7 +42,8 @@ if __name__ == "__main__":
                                basic_prep(cand.text, rem_punct=True))
         
     # write candidate evaluation results in the file
-    write_results(file_name="output/scores.txt", 
+    write_results(file_path="output/", 
+                  name_prefix="scores",
                   candidates=candidates)
         
 
