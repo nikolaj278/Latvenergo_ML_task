@@ -2,8 +2,12 @@
 
 
 This project focuses on automatic speech recognition (ASR) quality estimation.
-Given one reference transcription and three candidate transcriptions, the goal is to estimate the quality of each candidate.
+Given one reference transcription and three candidate transcriptions, the goal is to estimate the quality of each candidate. 
+\
+\
 The following metrics were used: WER, CER, and WIL. These metrics were described and calculated using Python. Three additional files with highlighted errors were generated based on the WER results.
+\
+\
 A manual (subjective) analysis of the candidates was also performed to see how the metric values relate to typical transcription problems. For example, certain metric combinations may indicate issues such as incorrect word forms.
 
 
